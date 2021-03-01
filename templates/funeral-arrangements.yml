@@ -1,0 +1,43 @@
+---
+# These are the instructions at the top of the Funeral Arrangements Section
+instructions: |
+  TBD
+
+# Whether or not you want to donate your Organs: `Yes` or `No`
+organ-donar: TBD
+
+# Do you wish to have an autopsy if one is not legally required: `Yes` or `No`
+request-autopsy: TBD
+
+# Do you wish to be embalmed: `Yes` or `No`
+embalming: TBD
+
+# Do you wish to have a Public Viewing: `Yes` or `No`
+public-viewing: TBD
+
+# How do you wish to have your body disposed of: e.g. `Donate Remains`, `Cremated` or `Burial`
+body-disposal: TBD
+
+# If you chose a `Burial`, do you have a coffin preference?
+coffin-preference: TBD
+
+# If you chose `Burial`. where do you want this burial to be located?
+burial-location: TBD
+
+# If you chose `Burial`, are there any additional instruction you wish to communicate?
+burial-instructions: TBD
+
+# What kind of service do you want? This might be based on your religion, type of ceremony, etc
+type-of-service: TBD
+
+# Where would you like this service to be located?
+service-location: TBD
+
+# Are there any additional instructions related to your funeral you wish to communicate? e.g. Open Casket, Closed Casket, Music, Speakers, etc
+funeral-instructions: TBD
+
+# Are there any instructions you wish to communicate regarding your obituary? e.g. Where to Publish, Location of Document if written in advance, etc
+obituary-instructions: TBD
+
+# are there any addition instructions you wish to communicate, e.g. flowers, donations, memorials, etc
+other-instructions: TBD

@@ -1,0 +1,7 @@
+.DS_Store
+bower_components
+node_modules
+npm-debug.log
+.sass-cache
+dist
+src/html/data/*.yml

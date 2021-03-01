@@ -1,0 +1,98 @@
+{
+  "name": "end-of-life-plan",
+  "version": "1.0.0",
+  "description": "Don't leave your family wondering what to do after you die.  Use this Open Source Tool to Create an End of Life Plan.",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Peter Schmalfeldt",
+      "email": "me@peterschmalfeldt.com",
+      "url": "peterschmalfeldt.com"
+    }
+  ],
+  "engines": {
+    "node": ">= 8.12.0",
+    "npm": ">= 6.4.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "scripts": {
+    "preversion": "npm run build",
+    "postversion": "git push && git push --tags",
+    "start": "export NODE_ENV=development && gulp",
+    "build": "export NODE_ENV=production && gulp build && npm run -s test",
+    "test": "npm run -s lint:js && npm run -s lint:html",
+    "lint:js": "eslint --ext .js src --fix && echo '\n【ツ】JAVASCRIPT PERFECTION !!!\n'",
+    "lint:html": "gulp lint-html && echo '\n【ツ】HTML PERFECTION !!!\n'",
+    "help": "node node_modules/npm-scripts-help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manifestinteractive/end-of-life-plan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manifestinteractive/end-of-life-plan/issues",
+    "email": "me@peterschmalfeldt.com"
+  },
+  "devDependencies": {
+    "ansi-colors": "^3.2.3",
+    "autoprefixer": "^9.4.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "fancy-log": "^1.3.3",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmllint": "0.0.16",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "npm": "^6.4.1",
+    "npm-scripts-help": "^0.8.0",
+    "panini": "^1.6.3",
+    "rimraf": "^2.6.2"
+  },
+  "scriptshelp": {
+    "help-message": "End of Life Plan Website NPM Commands:",
+    "help": {
+      "desciption": "Generates List of NPM Scripts you can run"
+    },
+    "preversion": {
+      "desciption": "This should not be used manually, as it is part of a release process."
+    },
+    "postversion": {
+      "desciption": "This should not be used manually, as it is part of a release process."
+    },
+    "start": {
+      "desciption": "Starts Local Server and Opens Browser to http://localhost:8081 for Development"
+    },
+    "build": {
+      "desciption": "Generate Static Document."
+    },
+    "test": {
+      "desciption": "Executes both npm run lint:js && npm run lint:html"
+    },
+    "lint:js": {
+      "script": "eslint --ext .js src --fix",
+      "desciption": "Verifies all JS Code used in ./src is free from errors"
+    },
+    "lint:html": {
+      "script": "gulp lint-html",
+      "desciption": "Verifies all HTML Code used in ./src is free from errors"
+    }
+  }
+}

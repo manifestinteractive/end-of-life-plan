@@ -1,0 +1,21 @@
+---
+# Drop your PDF files in the root of ./src/assets/documents/
+# If you do not have these documents ready, remove the file name so they will not appear
+#
+# NOTE: I used willing.com for these & had the documents notarized at my bank. Cost around $300, but worth it in my opinion.
+# NOTE: IMPORTANT!! Make sure any documents you use have all required signatures, otherwise they are legally useless.
+
+# Name someone you trust to manage your finances for when you’re unable to do so yourself.
+durable-power-of-attorney: durable-power-of-attorney.pdf
+
+# Identify who should receive your property, name guardians for any minor children, and put someone in charge of carrying out your wishes.
+last-will-and-testament: last-will-and-testament.pdf
+
+# Describe your preferences for care in a medical emergency. Name someone to carry out your wishes.
+living-will: living-will.pdf
+
+# Pass your property through a trust to avoid the cost and hassle of probate. Includes a transfer deed.
+revocable-living-trust: revocable-living-trust.pdf
+
+# Keep your home out of probate, if available for your state. A simpler alternative to a revocable living trust.
+transfer-on-death-deed: transfer-on-death-deed

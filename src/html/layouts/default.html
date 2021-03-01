@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <!-- Mobile Specific Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="EOL">
+    <meta name="application-name" content="EOL">
+
+    <title>Last Instructions for {{ personal-details.full-name }}</title>
+
+    <meta name="description" content="The purpose of this letter is to give your personal representative or family member the information he or she will need concerning your personal and financial matters.">
+    <meta name="cache-control" content="public">
+    <meta name="googlebot" content="noindex,nofollow">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="robots" content="noindex,nofollow">
+
+    <!-- Load CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ package.assetPath }}css/plugins.{{ package.version }}.min.css{{ package.cacheBreak }}">
+    <link rel="stylesheet" type="text/css" href="{{ package.assetPath }}css/app.{{ package.version }}.min.css{{ package.cacheBreak }}">
+  </head>
+  <body class="loading">
+    <div id="page-wrapper">
+      <!-- Content Wrapper -->
+      <div id="content-wrapper">
+        {{> body}}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+---
+layout: default
+---
+
+<!-- Main Wrapper -->
+<div id="main-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-title">
+          <h1 class="heading">
+            <b>{{ personal-details.full-name }}'s</b>
+            <br>
+            Letter of Last Instructions
+          </h1>
+          <div><b>Last Updated:</b>&nbsp; {{ package.currentDate }}</div>
+          <div><b>Author:</b>&nbsp; {{ personal-details.full-name }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 no-padding-left no-padding-right">
+        <div class="col-sm-4 margin-bottom-30">
+          <div>
+            <h4>Purpose of Document</h4>
+            <p>The purpose of this letter is to give my representative or family member the information they will need concerning my personal and financial matters.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 margin-bottom-30">
+          <div>
+            <h4>Death Notification</h4>
+            <p>Contact each individual in the Emergency Contacts below and make sure they are informed of my death.  A few are responsible for carrying out these instructions.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 margin-bottom-30">
+          <div>
+            <h4>Carrying Out Instructions</h4>
+            <p>Below you will find instructions for handling personal matters, such as terminating accounts, notifying insurance agencies, body disposal & funeral wishes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep-line margin-top-60 page-break">
+
+    <div class="row">
+      <div class="col-sm-12 margin-bottom-30">
+        <h2 class="title">Emergency Contacts</h2>
+        <p>{{ emergency-contacts.instructions }}</p>
+      </div>
+      <div class="col-sm-12 no-padding-left no-padding-right">
+        {{#contacts emergency-contacts}}{{/contacts}}
+      </div>
+    </div>
+
+    <hr class="sep-line margin-top-50 page-break">
+
+    <div class="row funeral-arrangements">
+      <div class="col-sm-12 margin-bottom-30">
+        <h2 class="title">Funeral Arrangements</h2>
+        <p>{{ funeral-arrangements.instructions }}</p>
+      </div>
+      <div class="col-sm-12 no-padding-left no-padding-right grid">
+
+        {{#if funeral-arrangements.organ-donar}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Organ Donar</h4>
+            <p>{{ funeral-arrangements.organ-donar }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.body-disposal}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Body Disposal</h4>
+            <p>{{ funeral-arrangements.body-disposal }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.type-of-service}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Type of Service</h4>
+            <p>{{ funeral-arrangements.type-of-service }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.service-location}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Service Location</h4>
+            <p>{{ funeral-arrangements.service-location }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.request-autopsy}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Request Autopsy</h4>
+            <p>{{ funeral-arrangements.request-autopsy }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.embalming}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Embalming</h4>
+            <p>{{ funeral-arrangements.embalming }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.public-viewing}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Public Viewing</h4>
+            <p>{{ funeral-arrangements.public-viewing }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.coffin-preference}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Coffin Preference</h4>
+            <p>{{ funeral-arrangements.coffin-preference }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.burial-location}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Burial Location</h4>
+            <p>{{ funeral-arrangements.burial-location }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.burial-instructions}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Burial Instructions</h4>
+            <p>{{ funeral-arrangements.burial-instructions }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.funeral-instructions}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Funeral Instructions</h4>
+            <p>{{ funeral-arrangements.funeral-instructions }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.obituary-instructions}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Obituary Instructions</h4>
+            <p>{{ funeral-arrangements.obituary-instructions }}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if funeral-arrangements.other-instructions}}
+        <div class="col-sm-4">
+          <div class="content-box">
+            <h4>Other Instructions</h4>
+            <p>{{ funeral-arrangements.other-instructions }}</p>
+          </div>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Wrapper Ends -->

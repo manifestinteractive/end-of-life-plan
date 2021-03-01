@@ -1,0 +1,19 @@
+---
+# These are the instructions at the top of the Insurance Policies Section
+instructions: |-
+  When contacting my Emergency Contacts, they will likely send unknown callers to their voicemail.
+  Please leave a detailed message with your First & Last name, as well as a Direct Number / Extension where you can be reached.
+
+# List of Insurance Policies. You can add as many of these as you want, as long as you keep the format consistent.
+policies:
+  - provider: Red Van Workshop, LLC Basic Life BHS
+    type: Basic Life and AD&D Insurance
+    policy:
+      number: 00077796
+      amount: $50,000
+      document:
+    agent:
+      name:
+      address:
+      phone:
+      email:

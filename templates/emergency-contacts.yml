@@ -1,0 +1,23 @@
+---
+# These are the instructions at the top of the Emergency Contacts Section
+instructions: |-
+  When contacting my Emergency Contacts, they will likely send unknown callers to their voicemail.
+  Please leave a detailed message with your First & Last name, as well as a Direct Number / Extension where you can be reached.
+
+# List of Emergency Contacts. You can add as many of these as you want, as long as you keep the format consistent.
+contacts:
+  - name: My Spouse
+    address: 123 Any Street, City, ST 12345
+    phone: 123-456-7890
+    email: spouse@email.com
+    relationship: Spouse
+  - name: My Friend
+    address: 123 Any Street, City, ST 12345
+    phone: 123-456-7890
+    email: friend@email.com
+    relationship: Friend
+  - name: My Boss ( Company Name )
+    address: 123 Any Street, City, ST 12345
+    phone: 123-456-7890
+    email: boss@email.com
+    relationship: Employer
