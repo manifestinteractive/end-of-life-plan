@@ -43,7 +43,7 @@
     "autoprefixer": "^9.4.2",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "eslint": "^5.10.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-friendly-formatter": "^4.0.1",
